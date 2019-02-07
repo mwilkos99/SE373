@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+body {
+    background-color: #ccc;
+    font-family: "Arial";
+    height: 100vh;
+    margin: 0px;
+}
+
+.body {
+    padding: 10px;
+    margin: auto;
+    min-height: 600px;
+    height: calc(100% - 160px);
+    width: 800px;
+}
+
+.image {
+    margin-right: 16px;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+textarea {
+    resize: none;
+    height: 300px;
+    width: 600px;
+}

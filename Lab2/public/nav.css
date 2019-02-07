@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+nav {
+    background-color: #111;
+    text-align: center;
+    min-width: 800px;
+    height: 80px;
+    width: 100%;
+}
+
+.btn {
+    background-color: transparent;
+    text-align: center;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 200px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #333;
+}
