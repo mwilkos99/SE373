@@ -12,7 +12,7 @@ app.set('view engine', 'hbs');
 app.use(express.urlencoded());
 app.use(express.static(__dirname + "/public"));
 
-app.use('/', (req, res, next) => {
+app.use('/', (req, res, next)=> {
     //console.log(new Date());
     next();
 });
@@ -38,7 +38,7 @@ hbs.registerHelper('select', ()=> {
     return select;
 });
 
-app.all('/results', (req, res) => {
+app.all('/results', (req, res)=> {
     res.render('results.hbs', {
         size: req.body.gridSize
     });
@@ -67,6 +67,6 @@ hbs.registerHelper('table', (req, res)=> {
     return table;
 });
 
-app.listen(3000, () => {
+app.listen(3000, ()=> {
     console.log("Server is up at localhost:3000");
 });
